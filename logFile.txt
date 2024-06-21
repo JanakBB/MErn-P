@@ -6,3 +6,4 @@
 6/21/2024 - GET - /api/user/get?id=1 ::1 500 - 8m/s
 6/21/2024 - GET - /api/user/get?id=1 ::1 500 - 12m/s
 6/21/2024 - GET - /api/user/get?id=1 ::1 200 - 8m/s
+6/21/2024 - GET - /api/user/get?id=1 ::1 200 - 15m/s
