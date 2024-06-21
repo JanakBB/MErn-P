@@ -1,4 +1,4 @@
-let users = require('../Data/data');
+let {users} = require('../Data/data');
 
 function getUser (req, res) {
     let id = req.query.id;
