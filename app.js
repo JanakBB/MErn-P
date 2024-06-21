@@ -14,6 +14,7 @@ app.use(express.json());
 
 app.use("/api/user", logger, userRouter);
 app.use("/api/post", postRouter);
+app.use(express.static("public"));
 
 app.use(errorHanndlor);
 
