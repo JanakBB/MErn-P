@@ -7,3 +7,12 @@
 6/21/2024 - GET - /api/user/get?id=1 ::1 500 - 12m/s
 6/21/2024 - GET - /api/user/get?id=1 ::1 200 - 8m/s
 6/21/2024 - GET - /api/user/get?id=1 ::1 200 - 15m/s
+6/22/2024 - POST - /api/user/add ::1 500 - 45m/s
+6/22/2024 - POST - /api/user/add ::1 200 - 20m/s
+6/22/2024 - POST - /api/user/add ::1 200 - 30m/s
+6/22/2024 - GET - /api/user/get ::1 200 - 14m/s
+6/22/2024 - GET - /api/user/get?id=6676324ab1557b9dfa460e6e ::1 200 - 11m/s
+6/22/2024 - POST - /api/user/add ::1 200 - 35m/s
+6/22/2024 - GET - /api/user/get ::1 200 - 7m/s
+6/22/2024 - POST - /api/user/add ::1 200 - 47m/s
+6/22/2024 - GET - /api/user/get ::1 200 - 18m/s

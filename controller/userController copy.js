@@ -1,33 +1,27 @@
-const User = require("../model/userModel");
-
-async function getUser (req, res, next) {
-   try{
+let {users} = require('../Data/data');
+function getUser (req, res) {
     let id = req.query.id;
     if(id) {
-        let user = await User.findById(id);
+        console.log(users)
+        let user = users.find((u) => u.id == id);
         if(user) {
         res.send(user);
         } else {
-            let err = new Error(`User with id ${id} not found`);
-            next(err);
+            console.log("user can not found");
         }
     } else {
-        let users = await User.find();
         res.send(users);
     }
-   } catch (err) {
-    next(err);
-   }
 }
 
-async function addUser(req, res, next) {
-   try{
+function addUser(req, res) {
     let user = req.body;
-    let addedUser = await User.create(user);
-    res.send({message: `User with id ${addedUser._id} have been added`})
-   } catch (err) {
-    next(err);
-   }
+    let id = users.length + 1;
+    if (user) {
+        user = {id: id, ...user};
+        users.push(user);
+        res.send(users);
+    }
 }
 
 function updateUser(req, res) {
